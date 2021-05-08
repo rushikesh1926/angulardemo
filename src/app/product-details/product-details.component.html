@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-item">
+        <div class="card-body">
+            <img class="img-thumbnail mb-3" src={{productdetailsobj.productimage}} width="100%" alt="">
+            <h5 class="bro">{{productdetailsobj.producttitle}}</h5>
+            <p>{{productdetailsobj.productdescription}}</p>
+            <div class="btn-group border rounded ">
+            <button class="btn btn-sm border-end border btn-outline-primary" (click)="sendproducttoparent(productdetailsobj.producttitle)"> like me <i class="far fa-thumbs-up"></i></button>
+            </div>
+        </div>    
+    </div>
+</div>
