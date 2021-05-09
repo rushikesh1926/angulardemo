@@ -1,4 +1,46 @@
+<!-- create navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fas fa-camera-retro display-6"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="register">Register</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login">Login</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " routerLink="contactus">Contactus</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " routerLink="products">Products</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
 <div class="container">
-<app-products></app-products>
-  <app-footer></app-footer>
-</div>
+  <router-outlet></router-outlet>
+  </div>
+
+  <div >
+    <app-footer class="mt-auto"></app-footer>
+  </div>
+
+
+
