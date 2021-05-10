@@ -11,7 +11,8 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
   {path:'contactus',component:ContactUsComponent} ,
-  {path:'products',component:ProductsComponent}
+  {path:'album',component:ProductsComponent},
+  {path:'', redirectTo:'/home',pathMatch:'full'}
 
 ];
 
