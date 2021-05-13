@@ -1,16 +1,18 @@
-<div class="container  bg-danger mt-5">
-    <h1 class="lead display-5 text-center p-4 text-white border-bottom border-white border-2 w-50 mx-auto littu">Bobby Joshi Album</h1>
+<ul class="nav nav-pills justify-content-evenly m-3">
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" routerLink="nature" >Nature</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" routerLink="wildlife">Wildlife</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLinkActive="active" routerLink="fashion" >Fashion</a>
+  </li>
   
-    <!--<p>no.of products selected:{{productcount}}</p>-->
-    <!--<p *ngFor="let title of productssentbychild">{{title}}</p>-->
-    
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 p-4">
-      <div *ngFor="let probj of products" class="col p-3">
-          <app-product-details [productdetailsobj]=probj   (myevent)="getproductssentbychild($event)"></app-product-details>
-      </div>
-    </div>
-  
-    
-    
-  </div>
+</ul>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
   
