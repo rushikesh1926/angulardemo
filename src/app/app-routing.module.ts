@@ -8,12 +8,16 @@ import { NatureComponent } from './nature/nature.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
+import { Test1Component } from './test1/test1.component';
+import { Test2Component } from './test2/test2.component';
 import { WildlifeComponent } from './wildlife/wildlife.component';
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
+  {path:'test1',component:Test1Component},
+  {path:'test2',component:Test2Component},
   {path:'contactus',component:ContactUsComponent} ,
   {path:'album',component:ProductsComponent,children:[
     {path:'nature',component:NatureComponent},

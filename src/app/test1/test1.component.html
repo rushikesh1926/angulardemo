@@ -1,0 +1,25 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 p-4 mt-2">
+    <div *ngFor="let mytestobj of mytestone" class="col p-3">
+        <div class="card shadow">
+            <div class="card-item">
+                <div class="card-body">
+                    <h5 class="text-center mb-3 littz "><i class="far fa-address-book"></i> Details of {{mytestobj.name}} </h5>
+                    <h1 class="w-75 border-top mx-auto border-2 p-2 border-dark"></h1>
+                    <P><strong> User Id : </strong>{{mytestobj.id}}</P>
+                    <p><strong>Name : </strong>{{mytestobj.name}}</p>
+                    <P><strong>User Name : </strong>{{mytestobj.username}}</P>
+                    <P><strong>email : </strong>{{mytestobj.email}}</P>
+                    <P><strong>address : </strong><span>{{mytestobj.address.street}} ,{{mytestobj.address.suite}} ,{{mytestobj.address.city}} ,{{mytestobj.address.zipcode}} ,LAT :{{mytestobj.address.geo.lat}} ,LNG :{{mytestobj.address.geo.lng}}</span></P>
+
+                    <P><strong>Phone : </strong>{{mytestobj.phone}}</P>
+                    <P><strong>Website : </strong>{{mytestobj.website}}</P>
+                    <P><strong>Company Name : </strong>{{mytestobj.company.name}}</P>
+                    <P><strong>Catch Phrase : </strong>{{mytestobj.company.catchPhrase}}</P>
+                    <P><strong>BS : </strong>{{mytestobj.company.bs}}</P>
+                    
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+    </div>

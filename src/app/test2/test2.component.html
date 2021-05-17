@@ -1,0 +1,22 @@
+<table class="table text-center table-hover">
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Year</th>
+        
+        <th>pantone_value</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let mytest2obj of mytesttwo.data">
+            <td>{{mytest2obj.id}}</td>
+            <td>{{mytest2obj.name}}</td>
+            <td>{{mytest2obj.year}}</td>
+           
+            <td>{{mytest2obj.pantone_value}}</td>
+        </tr>
+    </tbody>
+
+</table>           

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
@@ -14,6 +14,8 @@ import { NatureComponent } from './nature/nature.component';
 import { WildlifeComponent } from './wildlife/wildlife.component';
 import { FashionComponent } from './fashion/fashion.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { Test1Component } from './test1/test1.component';
+import { Test2Component } from './test2/test2.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,14 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     NatureComponent,
     WildlifeComponent,
     FashionComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    Test1Component,
+    Test2Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
