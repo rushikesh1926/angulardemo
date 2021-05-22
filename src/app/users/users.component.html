@@ -1,0 +1,15 @@
+<table class="table table-hover text-center w-50 mx-auto">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let usersinfo of myusersdata">
+            <td> <button class="btn btn-secondary" style="background-color: rgb(199, 193, 186);" (click)="getselectedId(usersinfo.id)">{{usersinfo.id}}</button></td>
+            <td>{{usersinfo.email}}</td>
+        </tr>
+    </tbody>
+</table>

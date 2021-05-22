@@ -1,0 +1,97 @@
+{
+  "users": [
+      {
+          "id":1,
+          "email":"rushikeshlittu@gmail.com",
+          "name":"rushikesh",
+          "profilePic": "https://i.pinimg.com/736x/85/5f/68/855f681d8b7b02535ec16ef75fd9dbb5.jpg",
+          "address":"Suhana Complex,Hyd-500090 ",
+          "profession" : "painter",
+          "mobileno" : "98989789"
+       },
+       {
+          "id":2,
+          "email":"abcdefghi@gmail.com",
+          "name":"scarlett jhonson",
+          "profilePic":"https://tse1.mm.bing.net/th?id=OIP.lqXI03aozEDEk-99PN540AHaJ4&pid=Api&P=0&w=300&h=300",
+          "address":"Kishore Plaza,Secunderabd-500075 ",
+          "profession":"dancer",
+          "mobileno" :"6886868686"
+       },
+       {
+          "id":3,
+          "email":"sdhhdhdhdhdaa@gmail.com",
+          "name":"Sejal Raj Sharma",
+          "profilePic":"https://indianathletics.in/wp-content/uploads/2019/07/Jinson-Jhonson.jpg",
+          "address":"Hawai Mumbai-800090 ",
+          "profession":"athlethe",
+          "mobileno" :"68868987"
+       },
+      
+       {
+          "id":4,
+          "email":"ramrajg@gmail.com",
+          "name":"Ram Rathod",
+          "profilePic":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwNRAZ31BKl2nTcb4l3W1HC53ZrWeR5uN48Q&usqp=CAU",
+          "address":"CyberTowers-Hyderabad-500089",
+          "profession":"Full Stack Developer",
+          "mobileno" :"565434589"
+       },
+       {
+          "id":5,
+          "email":"milleybobbybrowng@gmail.com",
+          "name":"bobby brown",
+          "profilePic":"https://tse4.mm.bing.net/th?id=OIP.v-2-eWOJgffcNPaqwL4FwwHaLH&pid=Api&P=0&w=300&h=300",
+          "address":"Noida ,New Delhi-700090",
+          "profession":"Interior Designer",
+          "mobileno" :"56490589"
+       },
+      
+       {
+          "id":6,
+          "email":"jhansirani_p@gmail.com",
+          "name":"Jhansi Jain",
+          "profilePic":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_hMpNTC6fND1rzLkIQdKfsFgga9ClgXafzQ&usqp=CAU",
+          "address":"Bala Nagar,Hyderabad-50060",
+          "profession":"Singer",
+          "mobileno" :"654345678"
+       },
+       {
+          "id":7,
+          "email":"Indrashenkarreddy_k@gmail.com",
+          "name":"Indra K",
+          "profilePic":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiiM0j_H5abGLu6Fe1qyj21EV7PGaGjMMGyA&usqp=CAU",
+          "address":"Kamala Nagar,Banglore",
+          "profession":"Technical Director",
+          "mobileno" :"9875445678"
+       },
+       {
+          "id":8,
+          "email":"sameera@gmail.com",
+          "name":"Sameera Lara",
+          "profilePic":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQKvSuMx6bQrEr56OTcSL4LtnwxCYN4YHAg&usqp=CAU",
+          "address":"Sarat Nagar-Hyderabad-500045",
+          "profession":"Fashion Designer",
+          "mobileno" :"9134567823"
+       },
+       {
+          "id":9,
+          "email":"kshore@gmail.com",
+          "name":"Kishore Varma",
+          "profilePic":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-pVKZwDP4eUTxULhJ-NHHMf2MuIO0CgX3yg&usqp=CAU",
+          "address":"Durgam Bazzar-Mysore-900089",
+          "profession":"Architect",
+          "mobileno" :"876543256"
+       },
+       {
+          "id":10,
+          "email":"sana.t@gmail.com",
+          "name":"Sana Talwar",
+          "profilePic":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROX01Ui6JkMLBMTBH-PbBwn9WuDJVn-4mgQA&usqp=CAU",
+          "address":"Shadnagar Hyderabad-500090",
+          "profession":"Professor ",
+          "mobileno" :"7844949849"
+       }    
+      
+  ]
+}

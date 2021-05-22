@@ -10,6 +10,8 @@ import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 import { Test1Component } from './test1/test1.component';
 import { Test2Component } from './test2/test2.component';
+import { UsersDetailsComponent } from './users-details/users-details.component';
+import { UsersComponent } from './users/users.component';
 import { WildlifeComponent } from './wildlife/wildlife.component';
 
 const routes: Routes = [
@@ -18,6 +20,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'test1',component:Test1Component},
   {path:'test2',component:Test2Component},
+  {path:'users',component:UsersComponent},
+  {path:'users/:id',component:UsersDetailsComponent},
   {path:'contactus',component:ContactUsComponent} ,
   {path:'album',component:ProductsComponent,children:[
     {path:'nature',component:NatureComponent},
