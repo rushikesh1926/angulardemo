@@ -10,6 +10,7 @@ import {DataService} from '../data.service'
 })
 export class NatureComponent implements OnInit{
 
+  searchterm:string;
   naturearray:productinter[]=[];
   constructor(private natureobj:DataService)
   {}

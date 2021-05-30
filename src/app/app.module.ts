@@ -18,6 +18,9 @@ import { Test1Component } from './test1/test1.component';
 import { Test2Component } from './test2/test2.component';
 import { UsersComponent } from './users/users.component';
 import { UsersDetailsComponent } from './users-details/users-details.component';
+import {FormsModule} from '@angular/forms';
+import { SquarePipe } from './square.pipe';
+import { SearchPipe } from './search.pipe'
 
 @NgModule({
   declarations: [
@@ -36,12 +39,14 @@ import { UsersDetailsComponent } from './users-details/users-details.component';
     Test1Component,
     Test2Component,
     UsersComponent,
-    UsersDetailsComponent
+    UsersDetailsComponent,
+    SquarePipe,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

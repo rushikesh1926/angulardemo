@@ -1,0 +1,40 @@
+
+<form #ref="ngForm" (ngSubmit)="saveNature(ref.value)">
+<table class="table">
+    <thead>
+        <th>title</th>
+        <th>description</th>
+        <th>Image</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let nature of naturedata;let ind=index">
+            <td>
+                <span *ngIf="!editNatureStatus || editNatureIndex!=ind">
+                {{nature.producttitle}}
+                </span>
+                <input class="w-100" type="text" name="naturetitle" id="" *ngIf="editNatureStatus && editNatureIndex==ind" [(ngModel)]="editNatureObj.producttitle">
+            </td>
+            <td>
+                <span *ngIf="!editNatureStatus || editNatureIndex!=ind"> 
+                {{nature.productdescription}}
+                </span>
+                <input class="w-100" type="text" name="naturedescription" id="" *ngIf="editNatureStatus && editNatureIndex==ind" [(ngModel)]="editNatureObj.productdescription">
+            </td>
+            <td><img src="{{nature.productimage}}" alt="" width="100px"></td>
+            <td>
+                <span *ngIf="!editNatureStatus || editNatureIndex!=ind">
+                <button class="btn btn-sm btn-info m-1" (click)="editNature(nature,ind)" type="button">edit</button>
+                <button class="btn btn-danger btn-sm m-1" type="button" (click)="deleteNature(nature)">delete</button>
+                </span>
+
+                <span  *ngIf="editNatureStatus && editNatureIndex==ind">
+                    <button class="btn btn-success btn-sm " type="submit">save</button>
+                </span>
+            </td> 
+                
+
+        </tr>
+    </tbody>
+</table>
+</form>

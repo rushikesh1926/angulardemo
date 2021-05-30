@@ -1,6 +1,7 @@
 
+    <input type="text" placeholder="search" class="form-control w-50 ms-5 mt-5" [(ngModel)]="searchterm">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 p-4">
-        <div *ngFor="let natureobj of naturearray" class="col p-3">
+        <div *ngFor="let natureobj of naturearray | search:searchterm" class="col p-3">
             <app-product-details [productdetailsobj]=natureobj ></app-product-details>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './data.service';
 
 
 @Component({
@@ -7,7 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  [x: string]: any;
+  
+  constructor(public dsobj:DataService){}
  
  
 }

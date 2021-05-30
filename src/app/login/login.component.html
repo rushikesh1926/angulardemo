@@ -1,22 +1,25 @@
 <div class="row">
     <div class="col-lg-5 mx-auto mt-3 p-3 ">
         <h4 class="m-5 text-center border-3 border-bottom p-2 border-muted">Login here</h4>
-        <form class="form  p-5">
+        <form class=" p-5" #ref="ngForm"  (ngSubmit)="ref.form.valid && onLogin(ref)">
             <div>
             <label for="un" class="form-label">User name</label>
-            <input type="text" id="un" name="username" class="form-control" >
+            <input type="text" id="un" name="username" class="form-control" ngModel  #refusername="ngModel" required minlength="4">
+            <p class="text-warning" *ngIf="(ref.form.submitted || refusername.touched) && refusername.errors?.required">*user name is required</p>
+            <p class="text-warning" *ngIf="(ref.form.submitted || refusername.touched) && refusername.errors?.minlength">*minlength is 4</p>
+
             </div>
             <div>
                 <label for="num" class="form-label">Phone number</label>
-                <input type="number" id="num" name="phone" class="form-control" >
+                <input type="number" id="num" name="phone" class="form-control" ngModel >
             </div> 
 
             <div>
                 <label for="otp" class="form-label">Enter otp </label>
-                <input type="number" id="otp" name="otplogin" class="form-control" >
+                <input type="number" id="otp" name="otplogin" class="form-control" ngModel>
             </div>
 
-            <button class="btn btn-success d-block mx-auto mt-3">
+            <button class="btn btn-success d-block mx-auto mt-3" type="submit">
                 login
             </button>
         </form>

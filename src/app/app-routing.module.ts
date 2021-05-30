@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminGuard } from './admin.guard';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FashionComponent } from './fashion/fashion.component';
 import {HomeComponent } from './home/home.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
     {path:'',redirectTo:'/album/fashion',pathMatch:'full'}
   ]},
   {path:'', redirectTo:'/home',pathMatch:'full'},
+  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule),canActivate:[AdminGuard]},
   {path:'**',component:PagenotfoundComponent}
 
 ];
